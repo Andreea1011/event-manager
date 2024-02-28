@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76ED2B0A-9F47-4194-8492-90B8841349B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_angajati.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_angajati.Designer.cs">
+      <DependentUpon>form_angajati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_a_e.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_a_e.Designer.cs">
+      <DependentUpon>form_a_e.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_clienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_clienti.Designer.cs">
+      <DependentUpon>form_clienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_departamente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_departamente.Designer.cs">
+      <DependentUpon>form_departamente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_evenimente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_evenimente.Designer.cs">
+      <DependentUpon>form_evenimente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_furnizori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_furnizori.Designer.cs">
+      <DependentUpon>form_furnizori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_f_e.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_f_e.Designer.cs">
+      <DependentUpon>form_f_e.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_locatie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_locatie.Designer.cs">
+      <DependentUpon>form_locatie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inserare_angajat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserare_angajat.Designer.cs">
+      <DependentUpon>inserare_angajat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inserare_a_e.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserare_a_e.Designer.cs">
+      <DependentUpon>inserare_a_e.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inserare_clienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserare_clienti.Designer.cs">
+      <DependentUpon>inserare_clienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inserare_departamente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserare_departamente.Designer.cs">
+      <DependentUpon>inserare_departamente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inserare_eveniment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserare_eveniment.Designer.cs">
+      <DependentUpon>inserare_eveniment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inserare_furnizor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserare_furnizor.Designer.cs">
+      <DependentUpon>inserare_furnizor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inserare_f_e.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserare_f_e.Designer.cs">
+      <DependentUpon>inserare_f_e.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inserare_locatie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserare_locatie.Designer.cs">
+      <DependentUpon>inserare_locatie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stergere_angajat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stergere_angajat.Designer.cs">
+      <DependentUpon>stergere_angajat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stergere_a_e.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stergere_a_e.Designer.cs">
+      <DependentUpon>stergere_a_e.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stergere_clienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stergere_clienti.Designer.cs">
+      <DependentUpon>stergere_clienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stergere_departamente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stergere_departamente.Designer.cs">
+      <DependentUpon>stergere_departamente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stergere_eveniment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stergere_eveniment.Designer.cs">
+      <DependentUpon>stergere_eveniment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stergere_furnizor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stergere_furnizor.Designer.cs">
+      <DependentUpon>stergere_furnizor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stergere_f_e.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stergere_f_e.Designer.cs">
+      <DependentUpon>stergere_f_e.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stergere_locatie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stergere_locatie.Designer.cs">
+      <DependentUpon>stergere_locatie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemaDataSet.cs">
+      <DependentUpon>TemaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TemaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TemaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TemaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TemaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TemaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TemaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="update_angajat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_angajat.Designer.cs">
+      <DependentUpon>update_angajat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_a_e.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_a_e.Designer.cs">
+      <DependentUpon>update_a_e.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_clienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_clienti.Designer.cs">
+      <DependentUpon>update_clienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_departamente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_departamente.Designer.cs">
+      <DependentUpon>update_departamente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_eveniment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_eveniment.Designer.cs">
+      <DependentUpon>update_eveniment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_furnizor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_furnizor.Designer.cs">
+      <DependentUpon>update_furnizor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_f_e.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_f_e.Designer.cs">
+      <DependentUpon>update_f_e.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_locatie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_locatie.Designer.cs">
+      <DependentUpon>update_locatie.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_angajati.resx">
+      <DependentUpon>form_angajati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_a_e.resx">
+      <DependentUpon>form_a_e.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_clienti.resx">
+      <DependentUpon>form_clienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_departamente.resx">
+      <DependentUpon>form_departamente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_evenimente.resx">
+      <DependentUpon>form_evenimente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_furnizori.resx">
+      <DependentUpon>form_furnizori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_f_e.resx">
+      <DependentUpon>form_f_e.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_locatie.resx">
+      <DependentUpon>form_locatie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserare_angajat.resx">
+      <DependentUpon>inserare_angajat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserare_a_e.resx">
+      <DependentUpon>inserare_a_e.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserare_clienti.resx">
+      <DependentUpon>inserare_clienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserare_departamente.resx">
+      <DependentUpon>inserare_departamente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserare_eveniment.resx">
+      <DependentUpon>inserare_eveniment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserare_furnizor.resx">
+      <DependentUpon>inserare_furnizor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserare_f_e.resx">
+      <DependentUpon>inserare_f_e.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserare_locatie.resx">
+      <DependentUpon>inserare_locatie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="stergere_angajat.resx">
+      <DependentUpon>stergere_angajat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stergere_a_e.resx">
+      <DependentUpon>stergere_a_e.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stergere_clienti.resx">
+      <DependentUpon>stergere_clienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stergere_departamente.resx">
+      <DependentUpon>stergere_departamente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stergere_eveniment.resx">
+      <DependentUpon>stergere_eveniment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stergere_furnizor.resx">
+      <DependentUpon>stergere_furnizor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stergere_f_e.resx">
+      <DependentUpon>stergere_f_e.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stergere_locatie.resx">
+      <DependentUpon>stergere_locatie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_angajat.resx">
+      <DependentUpon>update_angajat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_a_e.resx">
+      <DependentUpon>update_a_e.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_clienti.resx">
+      <DependentUpon>update_clienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_departamente.resx">
+      <DependentUpon>update_departamente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_eveniment.resx">
+      <DependentUpon>update_eveniment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_furnizor.resx">
+      <DependentUpon>update_furnizor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_f_e.resx">
+      <DependentUpon>update_f_e.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_locatie.resx">
+      <DependentUpon>update_locatie.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClientiDataSet.xsc">
+      <DependentUpon>ClientiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClientiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClientiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClientiDataSet.xss">
+      <DependentUpon>ClientiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TemaDataSet.xsc">
+      <DependentUpon>TemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TemaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TemaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TemaDataSet.xss">
+      <DependentUpon>TemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TemaDataSet1.xsc">
+      <DependentUpon>TemaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TemaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TemaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TemaDataSet1.xss">
+      <DependentUpon>TemaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TemaDataSet2.xsc">
+      <DependentUpon>TemaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TemaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TemaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TemaDataSet2.xss">
+      <DependentUpon>TemaDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
